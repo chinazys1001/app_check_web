@@ -1,4 +1,4 @@
-// these file was generated automatically, so I decided not to edit
+// this file was generated automatically, so I decided not to edit
 // the code at all, although only Web-related configs should be examined,
 // since AppCheck works fine with other platforms for me
 
