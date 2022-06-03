@@ -1,0 +1,10 @@
+^C:\PROJECTS\APP_CHECK_WEB\APP_CHECK_WEB\BUILD\WINDOWS\CMAKEFILES\BFF84C4B032A42C25C0144A157C06F19\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/projects/app_check_web/app_check_web/windows -BC:/projects/app_check_web/app_check_web/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/projects/app_check_web/app_check_web/build/windows/app_check_web.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
