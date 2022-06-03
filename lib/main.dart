@@ -65,6 +65,9 @@ class _MyHomePageState extends State<MyHomePage> {
               builder: (context,
                   AsyncSnapshot<DocumentSnapshot<Map<String, dynamic>>>
                       snapshot) {
+                // that's the place where tha app fails to get data and
+                // returns snapshot error which says smth like
+                // "cloud firestore: permission denied"
                 if (snapshot.hasError) {
                   return Text(
                     snapshot.error.toString(),
